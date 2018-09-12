@@ -46,6 +46,7 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
     description = "John Doe's personal website" # Site description.
     keywords = "blog,developer,personal" # Site keywords.
     avatarurl = "images/avatar.jpg" # Contain the path of the optionnal avatar in the static folder.
+    banner = "https://name.png" # Banner
 
     footercontent = "Enter a text here." # Add footer content
 

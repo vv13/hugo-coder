@@ -1,5 +1,8 @@
 <section class="container centered">
   <div class="about">
+    {{ with .Site.Params.banner }}
+      <div class="banner"><img src="{{.}}" alt="banner"></div>
+    {{ end }}
     {{ with .Site.Params.avatarurl }}
       <div class="avatar"><img src="{{.}}" alt="avatar"></div>
     {{ end }}
