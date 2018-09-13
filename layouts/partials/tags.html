@@ -1,0 +1,9 @@
+  <ul class="section-tags">
+      {{- $rellink := .Page.RelPermalink -}}
+      <a class="tag" href="/posts">~/</a>
+      {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+          {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+              <a class="tag {{ if eq $rellink (printf "/tags/%s/" $name) }}current{{ end }}" href="{{ .Permalink }}">{{ $name }}</a>
+          {{ end }}
+      {{ end }}
+  </ul>

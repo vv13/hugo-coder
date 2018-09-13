@@ -1,0 +1,18 @@
+.section-tags {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  .tag {
+    margin: 1rem;
+    &.current {
+      transform: scale(1.2);
+      text-decoration: underline;
+    }
+  }
+  @media only screen and (max-device-width: 768px) {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -2,5 +2,6 @@
   {{ .Title }} · {{ .Site.Title }}
 {{ end }}
 {{ define "content" }}
+  {{ partial "tags.html" . }}
   {{ partial "list.html" . }}
 {{ end }}

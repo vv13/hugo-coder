@@ -6,14 +6,15 @@
     header {
       margin-top: 3.2rem;
       margin-bottom: 3.2rem;
-      h1, h2 {
+      h1,
+      h2 {
         margin: 0;
       }
       h2 {
-        margin-top: 1.0rem;
+        margin-top: 1rem;
         font-size: 1.8rem;
         color: $fg-color;
-        @media only screen and (max-device-width : 768px) {
+        @media only screen and (max-device-width: 768px) {
           font-size: 1.6rem;
         }
       }
@@ -21,34 +22,57 @@
   }
 }
 
-.avatar img{
+.avatar img {
   width: 20rem;
   height: auto;
   border-radius: 50%;
-  @media only screen and (max-device-width : 768px) {
+  @media only screen and (max-device-width: 768px) {
     width: 10rem;
   }
 }
 
 .list {
-  ul {
+  .list-items {
     margin: 3.2rem 0 3.2rem 0;
     list-style: none;
     padding: 0;
-    li {
-      font-size: 1.6rem;
-      @media only screen and (max-device-width : 768px) {
-        font-size: 1.4rem;
-        margin: 1.6rem 0 1.6rem 0;
-      }
-      span {
+    .list-item {
+      font-weight: bold;
+      position: relative;
+      height: 6rem;
+      font-size: 1.5rem;
+      display: flex;
+      .list-date {
         display: inline-block;
-        width: 20.0rem;
+        width: 20rem;
         text-align: right;
-        margin-right: 3.0rem;
-        @media only screen and (max-device-width : 768px) {
+        margin-right: 3rem;
+      }
+      .list-tags {
+        font-weight: normal;
+        text-decoration: underline;
+        display: flex;
+        .list-tag {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  @media only screen and (max-device-width: 768px) {
+    .list-items {
+      .list-item {
+        flex-direction: column;
+        height: auto;
+        font-size: 1.6rem;
+        margin: 1.6rem 0 1.6rem 0;
+        .list-date {
+          font-size: 1rem;
+          width: auto;
           display: block;
           text-align: left;
+        }
+        .list-tags {
+          display: none;
         }
       }
     }
@@ -63,29 +87,29 @@
   .about {
     text-align: center;
     h1 {
-      margin-top: 2.0rem;
+      margin-top: 2rem;
       margin-bottom: 0.5rem;
     }
     h2 {
-      margin-top: 1.0rem;
+      margin-top: 1rem;
       margin-bottom: 0.5rem;
       font-size: 2.4rem;
-      @media only screen and (max-device-width : 768px) {
-        font-size: 2.0rem;
+      @media only screen and (max-device-width: 768px) {
+        font-size: 2rem;
       }
     }
     ul {
       list-style: none;
-      margin: 3.0rem 0 1.0rem 0;
+      margin: 3rem 0 1rem 0;
       padding: 0;
       li {
         display: inline-block;
         position: relative;
         a {
-          margin-left: 1.0rem;
-          margin-right: 1.0rem;
+          margin-left: 1rem;
+          margin-right: 1rem;
           font-size: 1.6rem;
-          @media only screen and (max-device-width : 768px) {
+          @media only screen and (max-device-width: 768px) {
             font-size: 1.4rem;
           }
           i {
@@ -100,18 +124,18 @@
   .error {
     text-align: center;
     h1 {
-      margin-top: 2.0rem;
+      margin-top: 2rem;
       margin-bottom: 0.5rem;
       font-size: 4.6rem;
-      @media only screen and (max-device-width : 768px) {
+      @media only screen and (max-device-width: 768px) {
         font-size: 3.2rem;
       }
     }
     h2 {
-      margin-top: 2.0rem;
+      margin-top: 2rem;
       margin-bottom: 3.2rem;
       font-size: 3.2rem;
-      @media only screen and (max-device-width : 768px) {
+      @media only screen and (max-device-width: 768px) {
         font-size: 2.8rem;
       }
     }
