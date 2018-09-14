@@ -2,7 +2,10 @@
   <ul class="list-items">
     {{ range .Paginator.Pages }}
     <li class="list-item">
-      <span class="list-date">{{ .Date.Format "2006-01-02" }}</span>
+      <div class="list-date">
+        {{ .Date.Format "2006-01-02" }}
+        <div class="list-wordcount">共{{.WordCount}}字</div>
+      </div>
       <div class="list-content">
         <a class="list-title" href="{{ .URL }}">{{ .Title }}</a>
         <div class="list-tags">
