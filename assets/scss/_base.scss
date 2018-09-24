@@ -114,6 +114,10 @@ code {
   background-color: $alt-fg-color;
   color: $bg-color;
   padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+  a {
+    color: $bg-color;
+    text-decoration: underline;
+  }
 }
 
 blockquote {
